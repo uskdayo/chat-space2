@@ -1,0 +1,37 @@
+-# <メインチャット>
+.main-chat
+  .main-chat__group-info
+    .main-chat__group-info__left-box
+      .main-chat__group-info__left-box__group-name
+        test
+      .main-chat__group-info__left-box__group-member
+        Member :
+        .main-chat__group-info__left-box__group-member__name
+          masa
+    .main-chat__group-info__edit
+      Edit        
+  .main-chat__message-list
+    .message
+      .message__info
+        .message__info__name
+          masa
+        .message__info__date
+          2020/06/01(mon)18:33:45
+      .message__text
+        腹へった
+    .message
+      .message__info
+        .message__info__name
+          masa
+        .message__info__date
+          2020/06/01(mon)18:33:45
+      .message__text
+        腹へった    
+  .main-chat__message-form
+    .main-chat__message-form__new-message
+      %input{type: "text",class: "text-box",placeholder: "type a message"}
+      %label{class: "label"}
+        =icon('far','image',class: 'icon')
+        %input{class:"hide",type: "file"}
+    .main-chat__message-form__send
+      Send
