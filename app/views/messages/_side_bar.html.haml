@@ -11,7 +11,9 @@
           = icon('fas', 'cog', class: 'icon')
   .side-bar__group-list
     .group
-      .group__group-name
-        techcamp
-      .group__last-message
-        まだメッセージがありません  
+      - current_user.groups.each do |group|
+        = link_to group_messages_path(group) do
+          .group__group-name
+            = group.name
+          .group__last-message
+            = group.show_last_message 
